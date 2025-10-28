@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url(fontes/Coolvetica2.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url(fontes/Coolvetica2.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CoolveticaLight';
+    src: url(fontes/Coolvetica.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --corfundo:#fff6df;
+    --cor1:#00a724;
+    --cor2:#00881e;
+    --cor3:#006416;
+    --cor4:#003b0d;
+
+    --fontepadrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fontetitulo: 'idroid', cursive;
+    --fontetexto: 'Coolvetica', cursive;
+    --fonteadicional: 'CoolveticaLight', cursive;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: var(--fontepadrao);
+    background-color: var(--corfundo);
+}
+
+header {
+    background-image: linear-gradient(to bottom, #00a724,#00881e,#006416,#003b0d);
+    text-align: center;
+    color: white;
+    height: 200px;
+    width: 100%;
+    box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.479);
+}
+
+header > h1 {
+    padding-top: 30px;
+    font-size: 3em;
+    font-family: 'Coolvetica', Arial, Helvetica, sans-serif;
+    text-shadow: 3px 4px 2px rgb(0, 0, 0);
+}
+
+header > p {
+    margin-top: 20px;
+    font-family: 'CoolveticaLight';
+    font-size: 1em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.589);
+}
+
+nav {
+    margin-top: 40px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 13px 25px;
+    font-family: 'CoolveticaLight';
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.377);
+    transition-duration: 0.4s;
+}
+
+nav > a:hover {
+    background-color: #03b4296c;    
+}
+
+main {
+    margin: auto;
+    width: 80%;
+    background-color: white;
+    height: 100%;
+    padding: 10px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.719);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.historia > h2 {
+    color: #003b0d;
+    font: bold 2.2em 'idroid', sans-serif;
+    margin: 20px 30px;
+}
+
+main p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 30px;
+    text-align: justify;
+    text-indent: 30px;
+    padding-right: 30px;
+    line-height: 1.4em;
+}
+
+main span {
+    color: #006416;
+    font-weight: bold;
+}
+
+.historia > h3 {
+    color: #003b0d;
+    font: bold 1.5em 'idroid', sans-serif;
+    margin: 30px 30px;
+    text-indent: 10px;
+    background-image: linear-gradient(to right, rgba(0, 216, 0, 0.452), rgba(255, 255, 255, 0.377));
+}
+
+main a {
+    background-color: rgb(114, 236, 114);
+    color: #003b0d;
+    text-decoration: none;
+    padding: 2px 4px;
+}
+
+#robo {
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+#irina {
+    width: 80%;
+    padding: 20px 0px;
+    display: block;
+    margin: auto;
+}
+
+#android {
+    display: block;
+    max-width: 350px;
+    margin: auto;
+    padding: 20px 20px;
+}
+
+.video {
+    background-color: #038a20;
+    margin: 20px -10px;
+    padding: 20px;
+    padding: 15%;
+    position: relative;
+}
+
+/* Se eu colocar position:absolute podemos mexer separadamente no TOP,RIGHT, BOTTOM, LEFT e WIDTH, HEIGHT sem implicações de responsividade */
+.video > iframe {
+    position: absolute;
+    top: 4%;
+    left: 8%;
+    width: 85%;
+    height: 92%;
+}
+
+#aprender {
+    background-color: #006416;
+    color: white;
+    border-radius: 120px 120px 0px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-indent: 30px;
+    padding: 8px;
+    margin: 0px 30px;
+}
+
+#lista {
+    margin: 0px 30px;
+    padding: 10px;
+    background-color: rgb(172, 255, 172);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.603);
+}
+
+#lista p {
+    margin: 10px 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    padding: 10px;
+}
+
+footer {
+    background-color: #003b0d;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: smaller;
+}
+
+footer > p {
+    padding: 5px 0px;
+}
+
+
