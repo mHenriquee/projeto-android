@@ -81,7 +81,7 @@ nav {
 nav > a {
     text-decoration: none;
     color: white;
-    padding: 13px 25px;
+    padding: 13px 20px;
     font-family: 'CoolveticaLight';
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.377);
     transition-duration: 0.4s;
@@ -93,7 +93,7 @@ nav > a:hover {
 
 main {
     margin: auto;
-    width: 80%;
+    width: 90%;
     background-color: white;
     height: 100%;
     padding: 10px;
@@ -137,7 +137,7 @@ main a {
 }
 
 #robo {
-    width: 90%;
+    width: 80%;
     display: block;
     margin: auto;
     padding: 20px 0px;
@@ -161,17 +161,17 @@ main a {
     background-color: #038a20;
     margin: 20px -10px;
     padding: 20px;
-    padding: 15%;
+    padding: 17%;
     position: relative;
 }
 
 /* Se eu colocar position:absolute podemos mexer separadamente no TOP,RIGHT, BOTTOM, LEFT e WIDTH, HEIGHT sem implicações de responsividade */
 .video > iframe {
     position: absolute;
-    top: 4%;
-    left: 8%;
-    width: 85%;
-    height: 92%;
+    top: 3%;
+    left: 24%;
+    width: 54%;
+    height: 94%;
 }
 
 #aprender {
