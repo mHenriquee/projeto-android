@@ -81,7 +81,7 @@ nav {
 nav > a {
     text-decoration: none;
     color: white;
-    padding: 13px 20px;
+    padding: 13px 5px;
     font-family: 'CoolveticaLight';
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.377);
     transition-duration: 0.4s;
@@ -157,21 +157,23 @@ main a {
     padding: 20px 20px;
 }
 
-.video {
-    background-color: #038a20;
-    margin: 20px -10px;
+/* Qualquer div que tenha a classe video */
+
+div.video {
+    background-color:#006416;
+    margin: 0px -20px 30px -20px;
     padding: 20px;
-    padding: 17%;
+    padding-bottom: 50%;
     position: relative;
 }
 
 /* Se eu colocar position:absolute podemos mexer separadamente no TOP,RIGHT, BOTTOM, LEFT e WIDTH, HEIGHT sem implicações de responsividade */
-.video > iframe {
+div.video > iframe {
     position: absolute;
-    top: 3%;
-    left: 24%;
-    width: 54%;
-    height: 94%;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 #aprender {
